@@ -55,7 +55,7 @@
 // Metodlar: slice
 
 // const ajratish = (massiv) => {
-//   return massiv.slice(6);
+//   return massiv.slice(3, 7);
 // };
 
 // const massiv = [12, 15, 34, 56, 89, 45, 67, 88, 20, 25];
@@ -156,10 +156,14 @@
 // Metodlar: splice, slice, concat, join
 
 // const Tahrirlash = (oylar) => {
-//   oylar.splice(2, 0, "Bahor");
-//   const yangi = oylar.slice(0, 2);
-//   const birlashtirish = yangi.concat(oylar);
-//   return birlashtirish.join(", ");
+
+//   oylar.splice(2, 0, "Bahor"); // ['Yanvar', 'Fevral', 'Bahor', 'Mart', 'Aprel']
+
+//   const yangi = oylar.slice(0, 2); // ['Yanvar', 'Fevral']
+
+//   const natija = yangi.concat(oylar);
+
+//   return natija.join(", ");
 // };
 
 // console.log(Tahrirlash(["Yanvar", "Fevral", "Mart", "Aprel"]));
