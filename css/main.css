@@ -1,64 +1,64 @@
 /* league-spartan-300 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "League Spartan";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/league-spartan-v15-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/league-spartan-v15-latin-300.woff2") format("woff2");
 }
-/* league-spartan-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "League Spartan";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/league-spartan-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/league-spartan-v15-latin-regular.woff2") format("woff2");
 }
-/* league-spartan-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "League Spartan";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/league-spartan-v15-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/league-spartan-v15-latin-500.woff2") format("woff2");
 }
-/* league-spartan-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "League Spartan";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/league-spartan-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/league-spartan-v15-latin-600.woff2") format("woff2");
 }
-/* league-spartan-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "League Spartan";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/league-spartan-v15-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/league-spartan-v15-latin-700.woff2") format("woff2");
 }
-/* league-spartan-800 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "League Spartan";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/league-spartan-v15-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/league-spartan-v15-latin-800.woff2") format("woff2");
 }
-/* league-spartan-900 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "League Spartan";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/league-spartan-v15-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/league-spartan-v15-latin-900.woff2") format("woff2");
 }
 
+/* ===================== */
+/*    CSS VARIABLES      */
+/* ===================== */
 :root {
   --text-color: rgba(255, 255, 255, 1);
 }
 
+/* ===================== */
+/*       RESET           */
+/* ===================== */
 * {
   margin: 0;
   padding: 0;
@@ -76,12 +76,21 @@ ul {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 input {
   outline: none;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===================== */
+/*      CONTAINER        */
+/* ===================== */
 .container {
   width: 100%;
   max-width: 1150px;
@@ -90,11 +99,12 @@ input {
 }
 
 body {
-  font-family: "League Spartan";
+  font-family: "League Spartan", sans-serif;
 }
 
-/* Header styles */
-
+/* ======================== */
+/*         HEADER           */
+/* ======================== */
 header {
   background-image: url("../imgs/hero-bg.svg");
   background-repeat: no-repeat;
@@ -109,27 +119,29 @@ header {
 
 .hero-content {
   width: 507px;
+  max-width: 100%;
   padding-bottom: 198px;
+}
 
-  h1 {
-    font-weight: 300;
-    font-size: 80px;
-    line-height: 80px;
-    letter-spacing: -1px;
-    margin-bottom: 10px;
-    color: var(--text-color);
-  }
+.hero-content h1 {
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
 
-  p {
-    color: var(--text-color);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 40px;
-  }
+.hero-content p {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 40px;
 }
 
 .hero-btn {
+  display: inline-block;
   padding: 25px 55px 23px 54px;
   border: 1px solid var(--text-color);
   background: none;
@@ -138,6 +150,10 @@ header {
   font-size: 17px;
   line-height: 16px;
   letter-spacing: 2.5px;
+  font-family: "League Spartan", sans-serif;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 
 .hero-btn:hover {
@@ -145,6 +161,9 @@ header {
   color: rgba(17, 17, 17, 1);
 }
 
+/* ======================== */
+/*         FAMLY             */
+/* ======================== */
 .famly {
   background-image: url("../imgs/bg.svg");
   background-position: left center;
@@ -165,32 +184,37 @@ header {
   height: 720px;
   object-fit: cover;
   margin-top: -80px;
+  flex-shrink: 0;
 }
 
 .famlycontent {
   width: 445px;
-
-  img {
-    margin-bottom: 55px;
-  }
-
-  h2 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
-    letter-spacing: -0.5px;
-    color: rgba(36, 43, 55, 1);
-    margin-bottom: 27px;
-  }
-
-  p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0px;
-  }
+  max-width: 100%;
 }
 
+.famlycontent img {
+  margin-bottom: 55px;
+}
+
+.famlycontent h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: rgba(36, 43, 55, 1);
+  margin-bottom: 27px;
+}
+
+.famlycontent p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+/* ======================== */
+/*          FOOD             */
+/* ======================== */
 .food {
   background-image: url("../imgs/bg2.svg");
   background-position: right bottom;
@@ -208,24 +232,27 @@ header {
 
 .foodcontent {
   width: 445px;
-  img {
-    margin-bottom: 55px;
-  }
-  h3 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
-    letter-spacing: -0.5px;
-    color: rgba(36, 43, 55, 1);
-    margin-bottom: 27px;
-  }
+  max-width: 100%;
+}
 
-  p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: rgba(36, 43, 55, 1);
-  }
+.foodcontent img {
+  margin-bottom: 55px;
+}
+
+.foodcontent h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: rgba(36, 43, 55, 1);
+  margin-bottom: 27px;
+}
+
+.foodcontent p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(36, 43, 55, 1);
 }
 
 .food-img {
@@ -234,6 +261,7 @@ header {
   object-fit: cover;
   margin-bottom: -80px;
   position: relative;
+  flex-shrink: 0;
 }
 
 .food-img img:nth-child(2) {
@@ -242,6 +270,9 @@ header {
   top: 282px;
 }
 
+/* ======================== */
+/*          FORM             */
+/* ======================== */
 .from {
   background-color: rgba(17, 17, 17, 1);
 }
@@ -256,27 +287,28 @@ header {
 
 .left {
   width: 445px;
+  max-width: 100%;
+}
 
-  img {
-    margin-bottom: 55px;
-  }
+.left img {
+  margin-bottom: 55px;
+}
 
-  h4 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
-    letter-spacing: -0.5px;
-    color: var(--text-color);
-    margin-bottom: 27px;
-  }
+.left h4 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: var(--text-color);
+  margin-bottom: 27px;
+}
 
-  p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0px;
-    color: var(--text-color);
-  }
+.left p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: var(--text-color);
 }
 
 .rigth {
@@ -293,25 +325,26 @@ header {
   border-bottom: 1px solid var(--text-color);
 }
 
-.box-content {
-  h5 {
-    color: var(--text-color);
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: -0.25px;
-    margin-bottom: 6px;
-  }
-
-  p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0px;
-    color: var(--text-color);
-  }
+.box-content h5 {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  margin-bottom: 6px;
 }
 
+.box-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: var(--text-color);
+}
+
+/* ======================== */
+/*           GAT             */
+/* ======================== */
 .gat {
   background-image: url("../imgs/bg3.svg");
   background-position: top left;
@@ -324,6 +357,7 @@ header {
   flex-direction: column;
   gap: 160px;
 }
+
 .gat-top {
   display: flex;
   align-items: center;
@@ -337,6 +371,7 @@ header {
   height: 720px;
   object-fit: cover;
   position: relative;
+  flex-shrink: 0;
 }
 
 .gat-img img:nth-child(2) {
@@ -348,24 +383,25 @@ header {
 .gat-contnet {
   display: flex;
   flex-direction: column;
-
-  h2 {
-    color: rgba(36, 43, 55, 1);
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
-    letter-spacing: -0.5px;
-    margin-bottom: 19px;
-  }
-
-  p {
-    color: rgba(36, 43, 55, 1);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 60px;
-  }
 }
+
+.gat-contnet h2 {
+  color: rgba(36, 43, 55, 1);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  margin-bottom: 19px;
+}
+
+.gat-contnet p {
+  color: rgba(36, 43, 55, 1);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
 .gat-btn {
   padding: 25px 55px 23px 54px;
   background-color: rgba(17, 17, 17, 1);
@@ -376,29 +412,37 @@ header {
   letter-spacing: 2.5px;
   width: 275px;
   margin-bottom: 79px;
+  font-family: "League Spartan", sans-serif;
+  transition:
+    background 0.3s,
+    color 0.3s,
+    border 0.3s;
 }
 
 .gat-btn:hover {
   background: none;
   border: 1px solid rgba(17, 17, 17, 1);
   color: rgba(17, 17, 17, 1);
-  cursor: pointer;
 }
+
 .text {
   display: flex;
   flex-direction: column;
   gap: 12px;
-
-  p {
-    color: rgba(76, 76, 76, 1);
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 28px;
-    letter-spacing: 2.5px;
-    margin-bottom: 0;
-  }
 }
 
+.text p {
+  color: rgba(76, 76, 76, 1);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: 2.5px;
+  margin-bottom: 0;
+}
+
+/* ======================== */
+/*        RESERVATION        */
+/* ======================== */
 .reservation {
   background-image: url("../imgs/gatbottombg.png");
   background-size: cover;
@@ -421,6 +465,9 @@ header {
   letter-spacing: -0.5px;
 }
 
+/* ======================== */
+/*          DINE             */
+/* ======================== */
 .dine {
   background-color: rgba(17, 17, 17, 1);
 }
@@ -436,28 +483,487 @@ header {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
 
-  p {
-    color: var(--text-color);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
+.text1 p {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .text2 {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
 
-  p {
-    color: var(--text-color);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
+.text2 p {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1165px) {
+  .food-img img:nth-child(2) {
+    display: none;
+  }
+
+  .gat-img img:nth-child(2) {
+    display: none;
+  }
+}
+
+/* ============================================================ */
+/*                   RESPONSIVE — TABLET (768px)                */
+/* ============================================================ */
+@media (max-width: 1024px) {
+  /* Header */
+  .logo {
+    padding-top: 40px;
+    margin-bottom: 80px;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding-bottom: 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  /* Famly */
+  .famly {
+    margin-bottom: 60px;
+    background-size: 100%;
+  }
+
+  .famly-wrap {
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+  }
+
+  .famly-img {
+    width: 100%;
+    height: 400px;
+    margin-top: -30px;
+    order: -1;
+  }
+
+  .famlycontent {
+    width: 95%;
+    padding: 60px 0;
+    margin-top: 300px;
+  }
+
+  .famlycontent img {
+    margin: 0 auto 40px;
+  }
+
+  .famlycontent h2 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  .famlycontent p {
+    font-size: 18px;
+  }
+
+  /* Food */
+  .food {
+    background-size: 100%;
+  }
+
+  .food-wrap {
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+  }
+
+  .food-img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 0;
+    order: -1;
+  }
+
+  .food-img img:nth-child(2) {
+    right: 20px;
+    top: auto;
+    bottom: -30px;
+    width: 100px;
+  }
+
+  .foodcontent {
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    margin-top: 300px;
+  }
+
+  .foodcontent img {
+    margin: 0 auto 40px;
+  }
+
+  .foodcontent h3 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  .foodcontent p {
+    font-size: 18px;
+  }
+
+  /* Form */
+  .form-wrap {
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 20px;
+    align-items: flex-start;
+  }
+
+  .left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .left img {
+    margin: 0 auto 40px;
+  }
+
+  .left h4 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  .rigth {
+    width: 100%;
+  }
+
+  /* Gat */
+  .gat-wrap {
+    gap: 80px;
+  }
+
+  .gat-top {
+    flex-direction: column;
+    gap: 60px;
+    padding: 80px 0;
+    align-items: flex-start;
+  }
+
+  .gat-img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .gat-img img:nth-child(2) {
+    top: -20px;
+    left: -20px;
+    width: 80px;
+  }
+
+  .gat-contnet {
+    margin-top: 200px;
+  }
+
+  .gat-contnet h2 {
+    font-size: 38px;
+  }
+
+  .gat-contnet p {
+    font-size: 18px;
+  }
+
+  /* Reservation */
+  .reservation {
+    height: auto;
+  }
+
+  .reservation-wrap {
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .reservation h2 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  /* Dine */
+  .dinewrap {
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
+    align-items: flex-start;
+  }
+}
+
+/* ============================================================ */
+/*                   RESPONSIVE — MOBILE (480px)                */
+/* ============================================================ */
+@media (max-width: 480px) {
+  /* Container */
+  .container {
+    padding: 0 16px;
+  }
+
+  /* Header */
+  .logo {
+    padding-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .hero-content {
+    padding-bottom: 70px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+    line-height: 44px;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-content p {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .hero-btn {
+    padding: 20px 36px;
+    font-size: 15px;
     letter-spacing: 2px;
-    text-transform: uppercase;
+  }
+
+  /* Famly */
+  .famly {
+    margin-bottom: 40px;
+    background-image: none;
+  }
+
+  .famly-img {
+    height: 280px;
+  }
+
+  .famlycontent {
+    padding: 40px 0;
+  }
+
+  .famlycontent h2 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .famlycontent p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /* Food */
+  .food {
+    background-image: none;
+  }
+
+  .food-img {
+    height: 280px;
+    margin-bottom: 0;
+  }
+
+  .food-img img:nth-child(2) {
+    display: none;
+  }
+
+  .foodcontent {
+    padding: 40px 0;
+  }
+
+  .foodcontent h3 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .foodcontent p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /* Form */
+  .form-wrap {
+    padding: 70px 0 60px;
+    gap: 40px;
+  }
+
+  .left h4 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .left p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .box-1 {
+    gap: 20px;
+  }
+
+  .box-content h5 {
+    font-size: 18px;
+  }
+
+  .box-content p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  /* Gat */
+  .gat {
+    background-image: none;
+  }
+
+  .gat-wrap {
+    gap: 0;
+  }
+
+  .gat-top {
+    padding: 60px 0;
+    gap: 40px;
+  }
+
+  .gat-img {
+    height: 280px;
+  }
+
+  .gat-img img:nth-child(2) {
+    display: none;
+  }
+
+  .gat-contnet h2 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .gat-contnet p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 40px;
+  }
+
+  .gat-btn {
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .text p {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+
+  /* Reservation */
+  .reservation-wrap {
+    padding: 50px 0;
+  }
+
+  .reservation h2 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .hero-btn,
+  .gat-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Dine (footer) */
+  .dinewrap {
+    padding: 50px 0;
+    gap: 30px;
+  }
+
+  .text1 p,
+  .text2 p {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+  }
+}
+
+/* ============================================================ */
+/*                   RESPONSIVE — SMALL (360px)                 */
+/* ============================================================ */
+@media (max-width: 550px) {
+  .hero-content h1 {
+    font-size: 36px;
+    line-height: 38px;
+  }
+
+  .famlycontent h2,
+  .foodcontent h3,
+  .left h4,
+  .gat-contnet h2,
+  .reservation h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .hero-btn {
+    width: 275px;
+  }
+
+  .gat-btn {
+    width: 243px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gat-contnet {
+    h2 {
+      margin-top: 100px;
+    }
+
+    p {
+      margin-top: 50px;
+    }
+  }
+
+  .dinewrap {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foodcontent {
+    h3 {
+      margin-top: 200px;
+    }
+  }
+
+  .famlycontent {
+    margin-top: 150px;
+  }
+
+  .famly-img img {
+    margin-top: -30px;
+  }
+
+  .form-wrap {
+    padding: 0 20px;
   }
 }
