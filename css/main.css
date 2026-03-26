@@ -1,0 +1,463 @@
+/* league-spartan-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/league-spartan-v15-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* league-spartan-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/league-spartan-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* league-spartan-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/league-spartan-v15-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* league-spartan-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/league-spartan-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* league-spartan-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/league-spartan-v15-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* league-spartan-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/league-spartan-v15-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* league-spartan-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/league-spartan-v15-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --text-color: rgba(255, 255, 255, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  font-family: "League Spartan";
+}
+
+/* Header styles */
+
+header {
+  background-image: url("../imgs/hero-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  padding-top: 65px;
+  margin-bottom: 153px;
+}
+
+.hero-content {
+  width: 507px;
+  padding-bottom: 198px;
+
+  h1 {
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+  }
+
+  p {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.hero-btn {
+  padding: 25px 55px 23px 54px;
+  border: 1px solid var(--text-color);
+  background: none;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+}
+
+.hero-btn:hover {
+  background: var(--text-color);
+  color: rgba(17, 17, 17, 1);
+}
+
+.famly {
+  background-image: url("../imgs/bg.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 1150px;
+  margin-bottom: 121px;
+}
+
+.famly-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 125px;
+}
+
+.famly-img {
+  width: 540px;
+  height: 720px;
+  object-fit: cover;
+  margin-top: -80px;
+}
+
+.famlycontent {
+  width: 445px;
+
+  img {
+    margin-bottom: 55px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: rgba(36, 43, 55, 1);
+    margin-bottom: 27px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0px;
+  }
+}
+
+.food {
+  background-image: url("../imgs/bg2.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 1150px;
+}
+
+.food-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 125px;
+}
+
+.foodcontent {
+  width: 445px;
+  img {
+    margin-bottom: 55px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: rgba(36, 43, 55, 1);
+    margin-bottom: 27px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(36, 43, 55, 1);
+  }
+}
+
+.food-img {
+  width: 540px;
+  height: 720px;
+  object-fit: cover;
+  margin-bottom: -80px;
+  position: relative;
+}
+
+.food-img img:nth-child(2) {
+  position: absolute;
+  right: -100px;
+  top: 282px;
+}
+
+.from {
+  background-color: rgba(17, 17, 17, 1);
+}
+
+.form-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 125px;
+  padding: 200px 0 120px 0;
+}
+
+.left {
+  width: 445px;
+
+  img {
+    margin-bottom: 55px;
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: var(--text-color);
+    margin-bottom: 27px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: var(--text-color);
+  }
+}
+
+.rigth {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.box-1 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.box-content {
+  h5 {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    margin-bottom: 6px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: var(--text-color);
+  }
+}
+
+.gat {
+  background-image: url("../imgs/bg3.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 1000px 300px;
+}
+
+.gat-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+.gat-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 125px;
+  padding: 160px 0;
+}
+
+.gat-img {
+  width: 540px;
+  height: 720px;
+  object-fit: cover;
+  position: relative;
+}
+
+.gat-img img:nth-child(2) {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+
+.gat-contnet {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    color: rgba(36, 43, 55, 1);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    margin-bottom: 19px;
+  }
+
+  p {
+    color: rgba(36, 43, 55, 1);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
+}
+.gat-btn {
+  padding: 25px 55px 23px 54px;
+  background-color: rgba(17, 17, 17, 1);
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+  width: 275px;
+  margin-bottom: 79px;
+}
+
+.gat-btn:hover {
+  background: none;
+  border: 1px solid rgba(17, 17, 17, 1);
+  color: rgba(17, 17, 17, 1);
+  cursor: pointer;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  p {
+    color: rgba(76, 76, 76, 1);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: 2.5px;
+    margin-bottom: 0;
+  }
+}
+
+.reservation {
+  background-image: url("../imgs/gatbottombg.png");
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+}
+
+.reservation-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 88px 0;
+}
+
+.reservation h2 {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+}
+
+.dine {
+  background-color: rgba(17, 17, 17, 1);
+}
+
+.dinewrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0 76px 0;
+}
+
+.text1 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  p {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+.text2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  p {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
